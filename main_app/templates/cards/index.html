@@ -21,6 +21,7 @@
 
 <section class="card-container">
   {% for card in cards %}
+  <a href="{% url 'card-detail' card.id %}">
     <div class="card">
       <div class="card-content">
         <div class="card-img-container">
@@ -30,13 +31,14 @@
           > {% endcomment %}
         </div>
         <h2 class="card-title">{{ card.name }}</h2>
-        {% if card.age > 0 %}
-          <p>A {{ card.age }} $$$ {{ card.breed }}</p>
+        {% if card.price > 0 %}
+          <p>A ${{ card.price }} {{ card.brand }}</p>
         {% else %}
-          <p>A {{ card.breed }} brand</p>
+          <p>A {{ card.brand }} brand</p>
         {% endif %}
         <p><small>{{ card.description }}</small></p>
       </div>
+    </a>
     </div>
   {% endfor %}
 </section>

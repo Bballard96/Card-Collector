@@ -23,8 +23,15 @@
     </div>
     <nav>
       <ul>
-        <li><a href="/cards">All Cards</a></li>
-        <li><a href="/about">About</a></li>
+        {% if user.is_authenticated %}
+          <li><a href="/cards">All Cards</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="{% url 'logout' %}">Log out</a></li>
+        {% else %}
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'home' %}">Login</a></li>
+        <li><a href="{% url 'signup' %}">Sign Up</a></li>
+        {% endif %}
       </ul>
     </nav>
   </header>
