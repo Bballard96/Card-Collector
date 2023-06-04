@@ -24,8 +24,9 @@
     <nav>
       <ul>
         {% if user.is_authenticated %}
-          <li><a href="/cards">All Cards</a></li>
-          <li><a href="/about">About</a></li>
+          <li><a href="{% url 'card-index' %}">All Cards</a></li>
+          <li><a href="{% url 'card-create' %}">Add a Card</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
           <li><a href="{% url 'logout' %}">Log out</a></li>
         {% else %}
         <li><a href="{% url 'about' %}">About</a></li>

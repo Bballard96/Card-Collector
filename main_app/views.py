@@ -31,7 +31,7 @@ class Home(LoginView):
 
 class CardCreate(CreateView):
   model = Card
-  fields = ['name', 'brand', 'description', 'price']
+  fields = ['__all__']
   
   # This inherited method is called when a
   # valid cat form is being submitted
