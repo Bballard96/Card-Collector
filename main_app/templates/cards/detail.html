@@ -26,6 +26,10 @@
       <h2>A {{ card.brand }} brand</h2>
     {% endif %}
     <p>{{ card.description }}</p>
+    <div class="card-actions">
+      <a href="{% url 'card-update' card.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'card-delete' card.id %}" class="btn danger">Delete</a>
+    </div>
   </div>
 </section>
 

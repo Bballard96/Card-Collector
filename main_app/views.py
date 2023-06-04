@@ -31,7 +31,8 @@ class Home(LoginView):
 
 class CardCreate(CreateView):
   model = Card
-  fields = ['__all__']
+  fields = '__all__'
+  success_url = '/cards/'
   
   # This inherited method is called when a
   # valid cat form is being submitted
@@ -40,6 +41,15 @@ class CardCreate(CreateView):
     form.instance.user = self.request.user  # form.instance is the cat
     # Let the CreateView do its job as usual
     return super().form_valid(form)
+  
+class CardUpdate(UpdateView):
+  model = Card
+  # Let's disallow the renaming of a cat by excluding the name field!
+  fields = ['brand', 'description', 'price']
+
+class CardDelete(DeleteView):
+  model = Card
+  success_url = '/cards/'
 
 
 def card_detail(request, card_id):

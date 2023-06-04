@@ -7,9 +7,15 @@
 
 {% block content %}
 
+{% if card %}
+<h1>Edit {{ card.name }}</h1>
+{% else %}
+<h1>Add a Card</h1>
+{% endif %}
+
 <div class="page-header">
   <h1>Add a Card</h1>
-  <img src="{% static 'images/nerd-cat.svg' %}" alt="A cat using a computer"/>
+  {% comment %} <img src="{% static 'images/nerd-cat.svg' %}" alt="A cat using a computer"/> {% endcomment %}
 </div>
 {% comment %} 
   Leaving the action empty makes the form post to the same url used to display it
