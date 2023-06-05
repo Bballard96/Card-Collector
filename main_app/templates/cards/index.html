@@ -25,6 +25,18 @@
     <div class="card">
       <div class="card-content">
         <div class="card-img-container">
+          {% if card.photo.url %}
+              <img 
+                src="{{card.photo.url}}" 
+                alt="A photo of {{card.name}}"
+                class="usr-img"
+              >
+            {% else %}
+              <img 
+                src="{% static 'images/sk8r-boi-cat.svg' %}" 
+                alt="A skater boy cat"
+              >
+            {% endif %}
           {% comment %} <img 
             src="{% static 'images/sk8r-boi-cat.svg' %}" 
             alt="A skater boy cat"

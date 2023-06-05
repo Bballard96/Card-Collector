@@ -11,12 +11,27 @@
 
 {% block content %}
 
-<section class="cat-container">
-  <div class="cat-img">
-    {% comment %} <img 
+<section class="card-container">
+  <div class="card-details">
+    <div class="img-container">
+      <img src="{% if card.photo.url %}
+      {{ card.photo.url}}
+      {% else %}{%static 'images/cardfav.png' %}
+      {% endif %}" alt="text">
+    </div>
+  </div>
+  {% comment %} <div class="cat-img">
+    {% if card.photo.url %}
+<img 
       src="{% static 'images/sk8r-boi-cat.svg' %}" 
       alt="A skater boy cat"
-    > {% endcomment %}
+    > 
+    {% else %}
+    <img 
+        src="{% static 'images/sk8r-boi-cat.svg' %}" 
+        alt="A skater boy cat"
+      >
+      {%endif%} {% endcomment %}
   </div>
   <div class="card-details">
     <h1>{{ card.name }}</h1>
@@ -30,6 +45,23 @@
       <a href="{% url 'card-update' card.id %}" class="btn warn">Edit</a>
       <a href="{% url 'card-delete' card.id %}" class="btn danger">Delete</a>
     </div>
+
+    <h3>Change {{ card.name }}'s photo</h3>
+    <p id="file-name"></p>
+    <form 
+      action="{% url 'add-photo' card.id %}"
+      enctype="multipart/form-data"
+      method="POST"
+    >
+      {% csrf_token %}
+      <label class="btn secondary">
+        Choose photo
+        <input type="file" name="photo-file" id="file-input">
+      </label>
+      <button type="submit" class="btn submit">Upload Photo</button>
+    </form>
+    
+    
   </div>
 </section>
 
