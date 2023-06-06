@@ -16,7 +16,7 @@
     <div class="img-container">
       <img src="{% if card.photo.url %}
       {{ card.photo.url}}
-      {% else %}{%static 'images/cardfav.png' %}
+      {% else %}{%static 'images/favicon.ico' %}
       {% endif %}" alt="text">
     </div>
   </div>
@@ -38,7 +38,7 @@
     {% if card.price > 0 %}
       <h2>A ${{ card.price }} card </h2>
     {% else %}
-      <h2>A {{ card.brand }} brand</h2>
+      <h2>A ${{ card.brand }} brand</h2>
     {% endif %}
     <p>{{ card.description }}</p>
     <div class="card-actions">

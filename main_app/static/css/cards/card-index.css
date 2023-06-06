@@ -10,6 +10,7 @@
   margin: 10px;
   border: var(--borders);
   box-shadow: var(--card-box-shadow);
+  border-radius: 10px;
 }
 
 .card-content {
@@ -35,4 +36,16 @@
 .card p {
   margin: 5px 0;
   font-size: var(--font-reg);
+}
+
+.card-title{
+  padding: 6px;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }

@@ -9,7 +9,7 @@
   <link
     rel="shortcut icon"
     type="image/png"
-    href="{% static 'images/cardfav.png' %}"
+    href="{% static 'images/baseball.png' %}"
   >
   <title>Card Collector</title>
   {% block head %}
@@ -17,10 +17,11 @@
 </head>
 <body>
   <header>
-    <div class="header-logo-container">
+    {% comment %} THIS IS WHAT MADE THE TOP LEFT NAV AND HOME BUTTON {% endcomment %}
+    {% comment %} <div class="header-logo-container">
       <a href="/">
       </a>
-    </div>
+    </div> {% endcomment %}
     <nav>
       <ul>
         {% if user.is_authenticated %}

@@ -8,6 +8,18 @@
 img {
   border-radius: 36px;
   padding-top: 17px;
+  max-width:300px;
+
+}
+
+main {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
 }
 
 .card-img {
