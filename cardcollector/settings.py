@@ -32,9 +32,9 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'brendan-card-collector.fly.dev']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'brendan-card.fly.dev']
 
-CSRF_TRUSTED_ORIGINS = ['https://brendan.card.collector.fly.dev']
+CSRF_TRUSTED_ORIGINS = ['https://brendan-card.fly.dev']
 
 
 # Application definition
