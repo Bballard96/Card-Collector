@@ -13,6 +13,10 @@
   border-radius: 10px;
 }
 
+.card:hover {
+  background-color: #884A39;
+}
+
 .card-content {
   padding: 10px;
   width: 100%;

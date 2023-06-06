@@ -6,16 +6,12 @@
 {% endblock %}
 
 {% block content %}
-
 <section class="logo-container">
   <div class="card-container">
     <img src="{% static 'images/baseball.png' %}" alt="The Cat Collector Cat" />
   </div>
-  {% comment %} <img 
-    src="{% static 'images/logotype.svg' %}" 
-    alt="Text reads: Cat Collector"
-  /> {% endcomment %}
 </section>
+
 
 {% if not user.is_authenticated %}
 <section>

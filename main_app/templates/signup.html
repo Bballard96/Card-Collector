@@ -15,7 +15,7 @@
 {% endif %}
 <form action="" method="post" class="form-container" autocomplete="off">
   {% csrf_token %}
-  <table>
+  <table autocomplete="off">
     {{ form.as_table }}
   </table>
   <button type="submit" class="btn submit">Submit!</button>

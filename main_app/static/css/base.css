@@ -11,8 +11,12 @@ html {
   box-sizing: inherit;
 }
 
-/* resets font size to be 62.5% of the user preference - 
-     in most browser configurations this will be 10px */
+.index-pic {
+  width: 270px;
+  height: 290px;
+  padding: 35px;
+}
+
 :root {
   font-size: 62.5%
 }
@@ -53,8 +57,14 @@ header {
   border-bottom: var(--borders);
 }
 
+
+
 nav {
   margin: 10px;
+}
+
+label {
+  font-size: larger;
 }
 
 ul {
@@ -77,6 +87,7 @@ nav a {
   color: var(--text-color);
   font-weight: 600;
   font-size: 16px;
+  
 }
 
 nav a:hover {
@@ -89,10 +100,12 @@ nav ul {
   justify-content: center;
   flex-wrap: wrap;
   color: purple;
+  
 }
 
 nav li {
   padding: 5px 8px;
+  
 }
 
 .header-logo-container {
@@ -127,8 +140,11 @@ nav li {
 }
 
 .submit {
-  color: var(--submit);
-  border-color: var(--submit);
+  color: black;
+  background-color: #D7C0AE;
+  border-color: #884A39;
+  margin: 40px;
+  /* padding: 30px */
 }
 
 .secondary {
@@ -136,14 +152,89 @@ nav li {
   border-color: var(--secondary);
 }
 
-.warn {
+/* .warn {
   color: var(--warn);
   border-color: var(--warn);
+} */
+
+
+/* CSS */
+.warn {
+  background: rgb(255, 102, 0);
+  border: 1px solid rgb(255, 102, 0);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
 }
 
-.danger {
+.warn:hover,
+.warn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: rgb(255, 102, 0);
+}
+
+.warn:active {
+  opacity: .5;
+}
+
+/* .danger {
   color: var(--danger);
   border-color: var(--danger);
+} */
+
+
+.danger {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.danger:hover,
+.danger:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.danger:active {
+  opacity: .5;
 }
 
 .page-header h1 {
@@ -184,6 +275,7 @@ nav li {
   .header-logo-container {
     margin: 10px 0;
     padding: 0 15px;
+    
   }
 
   /* visual fix to help align logo */
@@ -195,10 +287,12 @@ nav li {
     margin-left: auto;
     display: flex;
     justify-content: center;
+    
   }
 
   nav ul {
     flex-wrap: nowrap;
+    
   }
 
   .header-logo-container {
@@ -248,10 +342,12 @@ nav li {
     background: var(--nav-bg-ff);
     border: var(--borders);
     border-radius: 3px;
+    
   }
 
   nav {
     margin-left: auto;
+    
   }
 
   .header-logo-container {
@@ -273,6 +369,10 @@ nav li {
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
       height: 50px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      
     }
   }
 }

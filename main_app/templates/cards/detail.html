@@ -16,22 +16,10 @@
     <div class="img-container">
       <img src="{% if card.photo.url %}
       {{ card.photo.url}}
-      {% else %}{%static 'images/favicon.ico' %}
+      {% else %}{%static 'images/baseball.png' %}
       {% endif %}" alt="text">
     </div>
   </div>
-  {% comment %} <div class="cat-img">
-    {% if card.photo.url %}
-<img 
-      src="{% static 'images/sk8r-boi-cat.svg' %}" 
-      alt="A skater boy cat"
-    > 
-    {% else %}
-    <img 
-        src="{% static 'images/sk8r-boi-cat.svg' %}" 
-        alt="A skater boy cat"
-      >
-      {%endif%} {% endcomment %}
   </div>
   <div class="card-details">
     <h1>{{ card.name }}</h1>

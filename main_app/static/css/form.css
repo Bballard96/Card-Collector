@@ -8,6 +8,8 @@ table {
   padding: 0 40px;
   width: 100%;
   border-spacing: 0 20px;
+  border: solid #884A39;
+  border-radius: 20px;
 }
 
 th {

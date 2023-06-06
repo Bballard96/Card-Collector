@@ -11,22 +11,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponse
 
-# Define the home view
 
-# Add the Cat class & list and view function below the imports
-# class Card:  # Note that parens are optional if not inheriting from another class
-#   def __init__(self, name, brand, description, price):
-#     self.name = name
-#     self.brand = brand
-#     self.description = description
-#     self.price = price
-
-# cards = [
-#   Card('MJ', 'NBA', 'Mcheal Jordan collectible card', 300),
-#   Card('Pikachu', 'Pokemon', 'Yellow', 0),
-#   # Card('Fancy', 'bombay', 'Happy fluff ball.', 4),
-#   # Card('Bonk', 'selkirk rex', 'Meows loudly.', 6)
-# ]
 class Home(LoginView):
   template_name = 'home.html'
 
@@ -36,17 +21,13 @@ class CardCreate(CreateView):
   fields = '__all__'
   success_url = '/cards/'
   
-  # This inherited method is called when a
-  # valid cat form is being submitted
+
   def form_valid(self, form):
-    # Assign the logged in user (self.request.user)
     form.instance.user = self.request.user  # form.instance is the cat
-    # Let the CreateView do its job as usual
     return super().form_valid(form)
   
 class CardUpdate(UpdateView):
   model = Card
-  # Let's disallow the renaming of a cat by excluding the name field!
   fields = ['brand', 'description', 'price']
 
 class CardDelete(DeleteView):
