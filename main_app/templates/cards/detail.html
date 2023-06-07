@@ -34,7 +34,7 @@
       <a href="{% url 'card-delete' card.id %}" class="btn danger">Delete</a>
     </div>
 
-    <h3>Change {{ card.name }}'s photo</h3>
+    <h3>Change {{ card.name }} card photo</h3>
     <p id="file-name"></p>
     <form 
       action="{% url 'add-photo' card.id %}"

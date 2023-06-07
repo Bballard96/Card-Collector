@@ -131,7 +131,7 @@ nav li {
   background-color: var(--button-bg);
   font-weight: 600;
   cursor: pointer;
-  font-family: inherit;
+  font-family: "Arsenal";
   margin-right: 10px;
 }
 

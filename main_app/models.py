@@ -1,13 +1,14 @@
 from django.db import models
 from django.urls import reverse
 from django.contrib.auth.models import User
+from django.core.validators import MinValueValidator
 
 # Create your models here.
 class Card(models.Model):
   name = models.CharField(max_length=100)
   brand = models.CharField(max_length=100)
   description = models.TextField(max_length=250)
-  price = models.IntegerField()
+  price = models.IntegerField(validators=[MinValueValidator(0)])
   user = models.ForeignKey(User, on_delete=models.CASCADE)
 
   def __str__(self):
