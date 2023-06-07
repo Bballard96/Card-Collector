@@ -11,6 +11,7 @@
     type="image/png"
     href="{% static 'images/baseball.png' %}"
   >
+  <script src="https://kit.fontawesome.com/cbb16bb248.js" crossorigin="anonymous"></script>
   <title>Card Collector</title>
   {% block head %}
   {% endblock %}
@@ -34,6 +35,7 @@
         <li><a href="{% url 'about' %}">About</a></li>
         <li><a href="{% url 'home' %}">Login</a></li>
         <li><a href="{% url 'signup' %}">Sign Up</a></li>
+
         {% endif %}
       </ul>
     </nav>

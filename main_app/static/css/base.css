@@ -376,3 +376,18 @@ nav li {
     }
   }
 }
+
+/* @media (max-width: 960px){
+  header {
+    display: none;
+
+  }
+  label{
+    display: block;
+  }
+
+
+  label:hover{
+    color: black;
+  }
+} */
