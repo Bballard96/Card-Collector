@@ -1,10 +1,12 @@
 # Card Collector
 
+![Screenshot 2023-06-07 at 8 37 44 AM](https://github.com/Bballard96/Bballard96/assets/110790998/31690df0-02e7-4419-aa04-c01bdec9933c)
+
+
 ## An app for users to store all of the cards they are collecting with descriptions and price for each card. 
 
 ## Check out the [app](https://brendan-card.fly.dev/cards/)
 
-![Screenshot 2023-06-07 at 8 37 44 AM](https://github.com/Bballard96/Bballard96/assets/110790998/31690df0-02e7-4419-aa04-c01bdec9933c)
 
 
 <img src="https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" width="100"/>  
@@ -18,6 +20,8 @@
 <img src="https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white" width="100"/> 
 
 ## -AWS 
+
+# Atrributions - none 
 
 
 # Icebox 

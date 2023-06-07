@@ -122,7 +122,7 @@ nav li {
 }
 
 .btn {
-  color: black;
+  background-color: #884A39;
   font-size: var(--font-l);
   padding: 8px 16px;
   border-radius: 6px;
@@ -132,7 +132,6 @@ nav li {
   background-color: var(--button-bg);
   font-weight: 600;
   cursor: pointer;
-  font-family: "Arsenal";
   margin-right: 10px;
 }
 
@@ -227,10 +226,13 @@ nav li {
   opacity: .5;
 }
 
-.page-header h1 {
+.page-header  {
+  display: flex;
   font-size: var(--font-xxl);
   margin: 0;
+  justify-content: center;
 }
+
 
 
 
