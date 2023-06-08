@@ -42,7 +42,7 @@ body {
   --warn: rgb(255, 102, 0);
   --danger: rgb(220, 20, 30);
   --secondary: rgb(57, 57, 57);
-  --card-box-shadow: 5px 5px 6px -1px #AAA;
+  --card-box-shadow: 8px 6px 6px -1px #AAA;
   --font-xtreme: 4.2rem;
   --font-xxl: 3.6rem;
   --font-xl: 2.4rem;
@@ -53,10 +53,9 @@ body {
 
 header {
   width: 100%;
-  background: var(--nav-bg-ff); /* rgba(104, 197, 248, .9) */
+  background: var(--nav-bg-ff); 
   border-bottom: var(--borders);
 }
-
 
 
 nav {
@@ -270,7 +269,6 @@ nav li {
     
   }
 
-  /* visual fix to help align logo */
   .header-logo-container {
     padding-top: 3px;
   }
@@ -284,7 +282,6 @@ nav li {
 
   nav ul {
     flex-wrap: nowrap;
-    
   }
 
   .header-logo-container {
@@ -343,7 +340,6 @@ nav li {
   }
 
   .header-logo-container {
-    /* visual fix to help align logo */
     padding-top: 6px;
     width: 256px;
     height: 35px;
