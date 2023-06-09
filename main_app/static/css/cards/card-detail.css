@@ -6,7 +6,7 @@
   justify-content: center;
 }
 img {
-  border-radius: 36px;
+  border-radius: 16px;
   padding-top: 17px;
   max-width:300px;
 
@@ -19,7 +19,7 @@ main {
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .card-img {
@@ -100,9 +100,9 @@ p {
   margin-bottom: 10px;
 }
 
-.cat-details h3 {
+h3 {
   margin: 20px 0 10px;
-  font-size: var(--font-l);
+  font-size: 20px;
 }
 
 
