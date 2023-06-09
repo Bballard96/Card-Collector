@@ -1,14 +1,9 @@
-.cat-container {
-  padding: 35px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 img {
   border-radius: 16px;
   padding-top: 17px;
   max-width:300px;
+  box-shadow: var(--card-box-shadow);
 }
 
 main {
@@ -31,13 +26,6 @@ p {
   border-radius: var(--card-border-radius);
 }
 
-.cat-details {
-  width: 98%;
-}
-
-.cat-actions {
-  margin-top: 20px;
-}
 
 .feedings-toy-container {
   display: flex;
@@ -70,28 +58,11 @@ p {
 }
 
 
-.cat-details h1 {
-  font-size: var(--font-xxl);
-  margin: 15px 0 3px;
-}
-
-.cat-details h2 {
-  font-size: var(--font-xl);
-  margin: 0 0 10px;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
 h3 {
   margin: 20px 0 10px;
   font-size: 20px;
 }
 
-
-.cat-details p {
-  font-size: var(--font-reg);
-  margin: 5px 0;
-}
 
 .feedings-toy-container > section {
   width: 80%;
@@ -141,12 +112,6 @@ h3 {
 }
 
 @media only screen and (min-width: 768px) {
-  .cat-container {
-    padding: 35px 30px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-  }
 
   .card-img {
     width: 25%;

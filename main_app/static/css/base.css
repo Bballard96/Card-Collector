@@ -66,6 +66,10 @@ label {
   font-size: 26px;
 }
 
+h1{
+  font-size: 25px;
+}
+
 ul {
   margin: 0;
   list-style: none;
@@ -176,13 +180,6 @@ nav li {
   vertical-align: middle;
 }
 
-.warn:hover,
-.warn:active {
-  background-color: initial;
-  background-position: 0 0;
-  color: rgb(255, 102, 0);
-}
-
 .warn:active {
   opacity: .5;
 }
@@ -213,12 +210,7 @@ nav li {
   vertical-align: middle;
 }
 
-.danger:hover,
-.danger:active {
-  background-color: initial;
-  background-position: 0 0;
-  color: #FF4742;
-}
+
 
 .danger:active {
   opacity: .5;
@@ -250,9 +242,6 @@ nav li {
   font-size: var(--font-reg);
 }
 
-/* .card-content:hover{
-  background-color: #884A39;
-} */
 
 @media only screen and (min-width: 768px) {
   header {
