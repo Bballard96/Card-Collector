@@ -26,6 +26,6 @@
 
 
 # Icebox 
-### - [ ] AAU I would like to be able to have a option to trade cards with other users. 
-### - [ ] AAU I would like to be able to check a box if a card is for sale or not. 
-### - [ ] AAU I would like to be able to bid on cards with a bid function instead of having to pay one set price.
+### - [] AAU I would like to be able to have a option to trade cards with other users. 
+### - [] AAU I would like to be able to check a box if a card is for sale or not. 
+### - [] AAU I would like to be able to bid on cards with a bid function instead of having to pay one set price.
