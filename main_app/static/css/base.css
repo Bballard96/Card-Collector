@@ -42,7 +42,7 @@ body {
   --warn: rgb(255, 102, 0);
   --danger: rgb(220, 20, 30);
   --secondary: rgb(57, 57, 57);
-  --card-box-shadow: 8px 6px 6px -1px #AAA;
+  --card-box-shadow: 6px 5px 5px -1px black;
   --font-xtreme: 4.2rem;
   --font-xxl: 3.6rem;
   --font-xl: 2.4rem;
@@ -53,17 +53,17 @@ body {
 
 header {
   width: 100%;
-  background-image: url('static/images/3rdtable.jpg');
   border-bottom: var(--borders);
 }
 
 
 nav {
   margin: 10px;
+  box-shadow: var(--card-box-shadow);
 }
 
 label {
-  font-size: larger;
+  font-size: 26px;
 }
 
 ul {
@@ -231,6 +231,9 @@ nav li {
   justify-content: center;
 }
 
+.page-content{
+  font-size: larger;
+}
 
 
 
@@ -247,6 +250,10 @@ nav li {
   font-size: var(--font-reg);
 }
 
+/* .card-content:hover{
+  background-color: #884A39;
+} */
+
 @media only screen and (min-width: 768px) {
   header {
     position: sticky;
@@ -254,6 +261,7 @@ nav li {
     flex-direction: row;
     top: 0;
     align-items: center;
+    padding: 40px;
   }
 
   main {

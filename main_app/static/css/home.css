@@ -28,6 +28,7 @@ main > section {
 }
 
 .login {
+  background-color:#D7C0AE ;
   display: flex;
   flex-direction: column;
   justify-content: center;

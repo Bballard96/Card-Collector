@@ -9,7 +9,6 @@ img {
   border-radius: 16px;
   padding-top: 17px;
   max-width:300px;
-
 }
 
 main {
@@ -70,23 +69,6 @@ p {
   margin-right: 10px;
 }
 
-.unfed,
-.fed,
-.no-toys,
-.all-toys {
-  margin: 0;
-  font-weight: bold;
-}
-
-.unfed,
-.no-toys {
-  color: var(--danger);
-}
-
-.fed,
-.all-toys {
-  color: black;
-}
 
 .cat-details h1 {
   font-size: var(--font-xxl);
@@ -133,17 +115,6 @@ h3 {
   margin-left: 16px;
 }
 
-.feedings h2,
-.toys h2 {
-  font-size: 3.2rem;
-  margin: 0;
-}
-
-.feedings h3,
-.toys h3 {
-  font-size: var(--font-xl);
-  margin: 10px 0;
-}
 
 .subsection-content p,
 .subsection-content input,
@@ -157,41 +128,6 @@ h3 {
   padding: 3px;
 }
 
-.feedings table {
-  width: calc(100% - 16px);
-  text-align: left;
-  border-collapse: collapse;
-  margin: 0 8px;
-}
-
-.feedings td {
-  padding: 8px 5px;
-  font-size: var(--font-reg);
-}
-
-.feedings th {
-  font-size: var(--font-l);
-  padding: 5px 5px 0;
-  border-bottom: rgb(36, 116, 248) solid 2px;
-}
-
-.feedings tr:nth-child(even) {
-  background-color: #f3f3fd;
-}
-
-.toy-container p {
-  margin: 12px 0;
-}
-
-.toy-container a {
-  text-decoration: none;
-  color: #111;
-}
-
-.toy-container .btn {
-  padding: 3px 10px;
-  margin-left: 10px;
-}
 
 #file-input {
   overflow: hidden;

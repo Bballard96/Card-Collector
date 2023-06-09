@@ -10,6 +10,8 @@ table {
   border-spacing: 0 20px;
   border: solid #884A39;
   border-radius: 20px;
+  background-color: #D7C0AE ;
+  box-shadow: 5px 5px 5px -1px black ;
 }
 
 th {
