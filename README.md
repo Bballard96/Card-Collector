@@ -18,8 +18,8 @@
 <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" width="100"/>  
 
 
-##  AWS 
-##  Dockerfile
+## - AWS 
+## - Dockerfile
 
 # Atrributions 
 ## - [Baseball card image](https://www.flaticon.com/free-icon/baseball-card_1974013)
