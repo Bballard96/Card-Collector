@@ -1,6 +1,6 @@
 # Card Collector
 
-![Screenshot 2023-06-07 at 8 37 44 AM](https://github.com/Bballard96/Bballard96/assets/110790998/31690df0-02e7-4419-aa04-c01bdec9933c)
+![Screenshot 2023-06-09 at 8 10 08 AM](https://github.com/Bballard96/Card-Collector/assets/110790998/6d5d74a9-39cc-49cf-902d-6e1930db994a)
 
 
 ## An app for users to store all of the cards they are collecting with descriptions and price for each card. 
