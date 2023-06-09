@@ -184,6 +184,9 @@ nav li {
   opacity: .5;
 }
 
+p.page-content{
+  font-size:25px;
+}
 
 .danger {
   background: #FF4742;
