@@ -21,7 +21,8 @@
 
 ## -AWS 
 
-# Atrributions - none 
+# Atrributions 
+- [Baseball card image](https://www.flaticon.com/free-icon/baseball-card_1974013)
 
 
 # Icebox 
